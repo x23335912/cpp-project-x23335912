@@ -489,7 +489,8 @@ def receipt(request):
 
 
 
-from receipt_lib import format_transaction_date, generate_transaction_code, get_formatted_current_date
+from invoice_details_lib import get_transaction_date, get_transaction_code, get_current_date
+
 
 
 @login_required
@@ -504,14 +505,14 @@ def receipt(request):
 
             # Format date
             if field.name == 'date_added':
-                transaction['date_added'] = format_transaction_date(datetime.now())
+                transaction['date_added'] = get_transaction_code(datetime.now())
             else:
                 transaction[field.name] = value
 
     if 'tax_amount' in transaction:
         transaction['tax_amount'] = format(float(transaction['tax_amount']), ".2f")
 
-    transaction['transaction_code'] = generate_transaction_code()
+    transaction['transaction_code'] = get_transaction_code()
 
     ItemList = salesItems.objects.filter(sale_id=sales).all()
     context = {

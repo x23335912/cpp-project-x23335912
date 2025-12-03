@@ -17,3 +17,4 @@ Pillow
 requests
 boto3
 receipt-lib
+invoice-details-lib
