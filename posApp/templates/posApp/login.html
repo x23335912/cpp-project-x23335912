@@ -32,6 +32,117 @@
     <script src="{% static 'posAPP/assets/bootstrap/js/popper.min.js' %}"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <style>
+        body {
+            background: #1a4d2e !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .body-wrapper {
+            background: #1a4d2e;
+        }
+
+        .main-wrapper {
+            background: #1a4d2e;
+        }
+
+        .mdc-card {
+            background: #2d5f3f !important;
+            border-radius: 10px !important;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+            padding: 40px !important;
+        }
+
+        .mdc-card h3 {
+            color: #ffffff !important;
+            font-weight: 600;
+            padding: 25px;
+            margin: 0;
+        }
+
+        .mdc-text-field {
+            background: #1a4d2e !important;
+            border: 2px solid #3d7a52 !important;
+            border-radius: 6px !important;
+            padding: 10px 15px !important;
+            margin-bottom: 10px !important;
+        }
+
+        .mdc-text-field__input {
+            color: #ffffff !important;
+            font-size: 15px !important;
+            background: transparent !important;
+            border: none !important;
+            padding: 8px 0 !important;
+        }
+
+        .mdc-floating-label {
+            color: #a8d5a8 !important;
+            font-weight: 500 !important;
+        }
+
+        .mdc-text-field:focus-within {
+            border-color: #4a9d62 !important;
+            background: #1f5937 !important;
+        }
+
+        .mdc-line-ripple {
+            display: none !important;
+        }
+
+        .mdc-button {
+            background: #1a4d2e !important;
+            color: #ffffff !important;
+            border: 2px solid #3d7a52 !important;
+            border-radius: 6px !important;
+            padding: 14px !important;
+            font-size: 16px !important;
+            font-weight: 600 !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .mdc-button:hover {
+            background: #0f3d24 !important;
+            border-color: #4a9d62 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+        }
+
+        .mdc-button--raised {
+            box-shadow: none !important;
+        }
+
+        .alert {
+            border-radius: 6px !important;
+            margin-bottom: 20px !important;
+        }
+
+        .alert-danger {
+            background: #8b2e2e !important;
+            color: #ffcccc !important;
+            border: 1px solid #a03939 !important;
+        }
+
+        .err-msg {
+            padding: 12px 16px;
+        }
+
+        .mdc-layout-grid__cell {
+            padding: 8px !important;
+        }
+
+        @media (max-width: 480px) {
+            .mdc-card {
+                padding: 30px 25px !important;
+            }
+
+            .mdc-card h3 {
+                font-size: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
